@@ -11,6 +11,10 @@ import java.util.List;
 public interface UserMapper extends JpaRepository<User,Integer>,JpaSpecificationExecutor<User> {
     List<User> findUsersByAddress(String address);
 
+    List<User> findUsersByAgeBetween(Integer low, Integer high);
+
+    // List<User> findUsersByAgeBetweenAnd();
+
 //    @Modifying
 //    @Transactional
 //    @Query(value = "update user set username=#{u.username},password=#{u.password},address=#{u.address},age=#{u.age} where id=#{u.id}",nativeQuery = true)

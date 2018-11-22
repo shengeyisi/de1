@@ -4,6 +4,8 @@ import com.demo2.demo2.commons.Result;
 import com.demo2.demo2.dao.UserMapper;
 import com.demo2.demo2.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -33,5 +35,25 @@ public class UserController {
         user.setAge(19);
         um.save(user);
         return new Result(true,200,"保存成功");
+    }
+
+    @RequestMapping("deleteById")
+    public Result deleteById(){
+        um.deleteById(11);
+        return new Result(true,200,"删除成功");
+    }
+
+    @RequestMapping("findOneById/{id}")
+    public User findOneById(@PathVariable Integer id){
+        return um.findById(id).get();
+    }
+    @RequestMapping("findByAddress/{address}")
+    public List<User> findUserByAddress(@PathVariable String address){
+        System.out.println(address);
+        return um.findUsersByAddress(address);
+    }
+    @RequestMapping("findByAgeBetween/{low}/{high}")
+    public List<User> findByAgeBetween(@PathVariable Integer low,@PathVariable Integer high){
+        return um.findUsersByAgeBetween(low,high);
     }
 }
