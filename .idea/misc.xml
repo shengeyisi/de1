@@ -6,6 +6,11 @@
         <option value="$PROJECT_DIR$/demo1/pom.xml" />
         <option value="$PROJECT_DIR$/demo2/pom.xml" />
         <option value="$PROJECT_DIR$/demo3/pom.xml" />
+        <option value="$PROJECT_DIR$/../others/springclouddemo/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../others/springclouddemo/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../others/springclouddemo/service-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/../others/springclouddemo/service-hi/pom.xml" />
+        <option value="$PROJECT_DIR$/../others/springclouddemo/service-ribbon/pom.xml" />
       </list>
     </option>
   </component>

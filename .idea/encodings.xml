@@ -4,5 +4,10 @@
     <file url="file://$PROJECT_DIR$/demo1" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo3" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../others/springclouddemo/demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../others/springclouddemo/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../others/springclouddemo/service-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../others/springclouddemo/service-hi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../others/springclouddemo/service-ribbon" charset="UTF-8" />
   </component>
 </project>
