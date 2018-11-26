@@ -5,7 +5,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.util.Arrays;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 public class ThreadTest {
@@ -35,6 +36,27 @@ public class ThreadTest {
                 arr[k]=temp;
             }
         }
+        boolean equals = "1".equals("1");
+        System.out.println(equals);
         System.out.println(Arrays.toString(arr));
+    }
+
+    @Test
+    public void justTest() {
+//        String[] str = new String[] { "you", "wu" };
+//        List list = Arrays.asList(str);
+//        str[0] = "hui";
+////        list.add("3");  不能使用add方法 asList 的返回对象是一个 Arrays 内部类，并没有实现集合的修改方法
+//        System.out.println(list);
+
+//        Map map = new HashMap(16);
+//        map.put("1","校长");
+//        map.put("2","小王");
+//        map.put("3","老王");
+//        map.forEach((k,v)-> System.out.println(k+":"+v));
+
+
+
+
     }
 }
